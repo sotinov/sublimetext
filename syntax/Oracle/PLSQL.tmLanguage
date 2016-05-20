@@ -252,7 +252,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(interval\s+day\s+to\s+second|timestamp\s+with\s+local\s+time\s+zone|timestamp\s+with\s+time\s+zone|timestamp|pls_integer|blob|clob|number|integer|varchar2|boolean|date|sys_refcursor|raw)\b</string>
+			<string>(?i)\b(interval\s+day\s+to\s+second|timestamp\s+with\s+local\s+time\s+zone|timestamp\s+with\s+time\s+zone|timestamp|pls_integer|blob|clob|number|integer|varchar2|boolean|date|sys_refcursor|raw|dsinterval_unconstrained|timestamp_unconstrained|timestamp_tz_unconstrained|timestamp_ltz_unconstrained)\b</string>
 			<key>name</key>
 			<string>storage.type.oracle</string>
 		</dict>
