@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>fileTypes</key>
+    <array>
+        {% for ext in p_ext_list %}
+        <string>{{ ext }}</string>
+        {% endfor %}
+    </array>
+    <key>foldingStartMarker</key>
+    <string>(?i)XXX</string>
+    <key>foldingStopMarker</key>
+    <string>(?i)XXX</string>
+    <!--key>keyEquivalent</key>
+    <string>^~S</string-->
+    <key>name</key>
+    <string>Oracle PL/SQL</string>
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>match</key>
+            <string>(?i)\$\b(if|else|end|then)\b</string>
+            <key>name</key>
+            <string>preprocess.control.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\$\$\b(plsql_unit|plsql_line)\b</string>
+            <key>name</key>
+            <string>keyword.other.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\$\$\b[a-z0-9_#$"]+\b</string>
+            <key>name</key>
+            <string>preprocess.variable.oracle</string>
+        </dict>
+        <dict>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>variable.parameter.named.oracle</string>
+                </dict>
+                <key>2</key>
+                <dict>
+                    <key>name</key>
+                    <string>misc.oracle</string>
+                </dict>
+            </dict>
+            <key>match</key>
+            <string>(?i)\b({{ identifier }})\s+(=&gt;)</string>
+            <key>name</key>
+            <string>variable.parameter.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\b(true|false|null)\b</string>
+            <key>name</key>
+            <string>constant.language.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>-?\b\d+(\.\d+)?\b</string>
+            <key>name</key>
+            <string>constant.numeric.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\b(INTERVAL)\b\s*'[^']+'\s+\b(DAY\s+TO\s+SECOND|DAY|HOUR|MINUTE|SECOND)\b</string>
+            <key>name</key>
+            <string>constant.interval.oracle</string>
+        </dict>
+        <dict>
+            <key>begin</key>
+            <string>'</string>
+            <key>end</key>
+            <string>'</string>
+            <key>name</key>
+            <string>constant.string.oracle</string>
+        </dict>
+        <dict>
+            <key>begin</key>
+            <string>q'!</string>
+            <key>end</key>
+            <string>!'</string>
+            <key>name</key>
+            <string>constant.string.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\.\b(count|delete|exists|extend|first|last|limit|next|prior|trim)\b</string>
+            <key>name</key>
+            <string>support.method.collection.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\.\b(currval|nextval)\b</string>
+            <key>name</key>
+            <string>support.method.sequence.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\b({{ "|".join(function_list) }})\b</string>
+            <key>name</key>
+            <string>support.function.builtin.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\b(dbms_|utl_){{ identifier }}\b\.\b{{ identifier }}\b</string>
+            <key>name</key>
+            <string>support.function.builtin.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\s+({{ "|".join(type_list) }})\b</string>
+            <key>name</key>
+            <string>storage.type.oracle</string>
+        </dict>
+        <dict>
+            <key>begin</key>
+            <string>/\*</string>
+            <key>end</key>
+            <string>\*/</string>
+            <key>name</key>
+            <string>comment.block.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>--.*$</string>
+            <key>name</key>
+            <string>comment.line.double-dash.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\b(CREATE\s+OR\s+REPLACE)\b</string>
+            <key>name</key>
+            <string>keyword.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\b({{ "|".join(keyword_list) }})\b</string>
+            <key>name</key>
+            <string>keyword.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>[().,;&lt;&gt;|=?:+-/*$#%]</string>
+            <key>name</key>
+            <string>misc.oracle</string>
+        </dict>
+    </array>
+    <key>scopeName</key>
+    <string>source.plsql.oracle</string>
+    <key>uuid</key>
+    <string>{{ p_uuid }}</string>
+</dict>
+</plist>
