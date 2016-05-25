@@ -8,12 +8,6 @@
         <string>{{ ext }}</string>
         {% endfor %}
     </array>
-    <key>foldingStartMarker</key>
-    <string>(?i)XXX</string>
-    <key>foldingStopMarker</key>
-    <string>(?i)XXX</string>
-    <!--key>keyEquivalent</key>
-    <string>^~S</string-->
     <key>name</key>
     <string>Oracle PL/SQL</string>
     <key>patterns</key>
