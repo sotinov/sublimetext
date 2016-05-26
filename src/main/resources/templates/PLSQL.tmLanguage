@@ -36,6 +36,25 @@
                 <key>1</key>
                 <dict>
                     <key>name</key>
+                    <string>keyword.oracle</string>
+                </dict>
+                <key>2</key>
+                <dict>
+                    <key>name</key>
+                    <string>meta.oracle</string>
+                </dict>
+            </dict>
+            <key>match</key>
+            <string>(?i)\b(member\s+procedure|member\s+function)\s+{{ identifier }}\b</string>
+            <key>name</key>
+            <string>keyword.oracle</string>
+        </dict>
+        <dict>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
                     <string>variable.parameter.named.oracle</string>
                 </dict>
                 <key>2</key>
@@ -97,7 +116,13 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b({{ "|".join(function_list) }})\b</string>
+            <string>(?i)\bSTANDARD\.({{ "|".join(function_list) }})\b</string>
+            <key>name</key>
+            <string>support.function.builtin.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\bSYS\.({{ "|".join(function_list) }})\b</string>
             <key>name</key>
             <string>support.function.builtin.oracle</string>
         </dict>
@@ -126,6 +151,18 @@
             <string>--.*$</string>
             <key>name</key>
             <string>comment.line.double-dash.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\b{{ identifier }}\.{{ identifier }}\b</string>
+            <key>name</key>
+            <string>xxx</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\b({{ "|".join(function_list) }})\b</string>
+            <key>name</key>
+            <string>support.function.builtin.oracle</string>
         </dict>
         <dict>
             <key>match</key>
