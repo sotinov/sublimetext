@@ -4,125 +4,31 @@
 <dict>
 	<key>author</key>
 	<string>Sergey Otinov</string>
-
 	<key>comment</key>
 	<string>Created by Sergey Otinov</string>
-
 	<key>name</key>
-	<string>sotinov (dark)</string>
-
+	<string>sotinov dark</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#353535</string>
-
+				<string>#303030</string>
 				<key>caret</key>
 				<string>#FFFF00</string>
-
 				<key>foreground</key>
-				<string>#F0F0F0</string>
-
+				<string>#FFFFFF</string>
 				<key>invisibles</key>
-				<string>#BFBFBF</string>
-
+				<string>#C0C0C0</string>
 				<key>lineHighlight</key>
-				<string>#454545</string>
-
+				<string>#404040</string>
 				<key>selection</key>
-				<string>#505050FF</string>
-			</dict>
-		</dict>
-		<!-- sdasd -->
-		<dict>
-			<key>name</key>
-			<string>A</string>
-			<key asd="asd">scope</key>
-			<string>entity.other.attribute-name.localnae.xml</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#FF0000</string>
-			</dict>
-		</dict>
-		<!-- -->
-		<dict>
-			<key>name</key>
-			<string>Template string</string>
-			<key>scope</key>
-			<string>template.string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#00CC00</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Template variable</string>
-			<key>scope</key>
-			<string>template.variable</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#99FF99</string>
-				<!--key>fontStyle</key>
-				<string>bold</string-->
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>Template comment</string>
-			<key>scope</key>
-			<string>template.comment</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#00CC00</string>
-				<key>fontStyle</key>
-				<string>italic</string>
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>XML attribute</string>
-			<key>scope</key>
-			<string>entity.other.attribute-name.localname.xml</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#60ff60</string>
-				<key>fontStyle</key>
-				<string>bold</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Double quoted string</string>
-			<key>scope</key>
-			<string>string.quoted.double.xml</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ffa0a0</string>
-				<key>background</key>
-				<string>#0d0d0d</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Comment</string>
-			<key>scope</key>
-			<string>comment</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<!--string>#60ff60</string-->
-				<string>#909090</string>
+				<string>#585858FF</string>
+				<key>selectionBorder</key>
+				<string>#808080</string>
+				<key>inactiveSelection</key>
+				<string>#606060FF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -133,212 +39,110 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<!--string>#805978</string-->
-				<!--string>#E6DB74</string-->
-				<string>#FFDAB9</string>
+				<string>#FF9900</string>
+				<!--key>background</key>
+				<string>#000000</string-->
 			</dict>
 		</dict>
-
 		<dict>
 			<key>name</key>
-			<string>Numeric</string>
-
+			<string>Entity/Keyword</string>
 			<key>scope</key>
-			<string>constant.numeric.sql</string>
-
+			<string>entity,keyword</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<!--string>#9EBF60</string-->
-				<!--string>#70E070</string-->
-				<string> #ff0000</string>
+				<string>#FFFF98</string>
 			</dict>
 		</dict>
-
 		<dict>
 			<key>name</key>
-			<string>Constant</string>
-
+			<string>Comment</string>
 			<key>scope</key>
-			<string>constant</string>
-
+			<string>comment</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A8885A</string>
-				<!--string>#915F6D</string-->
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>Variable</string>
-			<key>scope</key>
-			<string>variable.parameter, variable.other</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<!--string>#596380</string-->
-				<string>#FD971F</string>
-				<key>fontStyle</key>
-				<string>italic</string>
+				<string>#808080</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Keyword</string>
-			<key>scope</key>
-			<string>keyword - keyword.operator, keyword.operator.logical</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#FFFF95</string>
-				<!--key>fontStyle</key>
-				<string>bold</string-->
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>Xxx</string>
-
-			<key>scope</key>
-			<string>xxx,keyword.operator.assing.sql,keyword.operator.concatenator.sql,keyword.operator.math.sql,keyword.operator.comparison.sql,keyword.operator.star.sql</string>
-
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<!--string>#9EBF60</string-->
-				<string>#00FFFF</string>
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>Storage</string>
+			<string>Comment</string>
 			<key>scope</key>
 			<string>storage</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<!--string>#9EBF60</string-->
-				<!--string>#70E070</string-->
-				<string>#F4A460</string>
+				<string>#00FF00</string>
 			</dict>
 		</dict>
-
 		<dict>
 			<key>name</key>
-			<string>Entity</string>
+			<string>Comment</string>
 			<key>scope</key>
-			<string>entity, punctuation.definition.tag.begin.xml, punctuation.definition.tag.end.xml</string>
+			<string>constant</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#40ffff</string>
+				<string>#FF9900</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Inherited class</string>
+			<string>Comment</string>
 			<key>scope</key>
-			<string>entity.other.inherited-class</string>
+			<string>misc</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
+				<key>foreground</key>
+				<string>#00FFFF</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Support</string>
+			<string>Comment</string>
 			<key>scope</key>
 			<string>support</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<!--string>#8A4B66</string-->
-				<string>#AF6D89</string>
+				<string>#8080FF</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Exception</string>
+			<string>Parameters</string>
 			<key>scope</key>
-			<string>support.type.exception</string>
+			<string>variable.parameter</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#893062</string>
+				<string>#8080FF</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Tag name</string>
+			<string>Parameters</string>
 			<key>scope</key>
-			<string>entity.name.tag</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Tag attribute</string>
-			<key>scope</key>
-			<string>entity.other.attribute-name</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Library constant</string>
-			<key>scope</key>
-			<string>support.constant</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Library class/type</string>
-			<key>scope</key>
-			<string>support.type, support.class</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Library variable</string>
-			<key>scope</key>
-			<string>support.other.variable</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Invalid</string>
-			<key>scope</key>
-			<string>invalid</string>
+			<string>preprocess</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#5F0047</string>
+				<key>foreground</key>
+				<string>#909090</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>- Meta</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>  function.section</string>
+			<string>Named parameters</string>
 			<key>scope</key>
-			<string>meta.function.section</string>
+			<string>variable.parameter.named.oracle</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#371D28</string>
-				<!--string>#FF0000</string-->
+				<key>foreground</key>
+				<string>#FF9900</string>
+				<key>fontStyle</key>
+				<string>italic</string>
 			</dict>
 		</dict>
 	</array>
