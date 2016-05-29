@@ -40,8 +40,8 @@
 			<dict>
 				<key>foreground</key>
 				<string>#FF9900</string>
-				<!--key>background</key>
-				<string>#000000</string-->
+				<key>background</key>
+				<string>#000000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -92,6 +92,17 @@
 			<key>name</key>
 			<string>Comment</string>
 			<key>scope</key>
+			<string>constant.string</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
 			<string>misc</string>
 			<key>settings</key>
 			<dict>
@@ -107,7 +118,8 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#8080FF</string>
+				<!--string>#8080FF</string-->
+				<string>#F080F0</string>
 			</dict>
 		</dict>
 		<dict>
