@@ -41,13 +41,13 @@
                 <key>2</key>
                 <dict>
                     <key>name</key>
-                    <string>meta.oracle</string>
+                    <string>xxx.oracle</string>
                 </dict>
             </dict>
             <key>match</key>
-            <string>(?i)\b(member\s+procedure|member\s+function)\s+{{ identifier }}\b</string>
+            <string>(?i)\b(member\s+procedure|member\s+function|constructor\s+function)\s+{{ identifier }}\b</string>
             <key>name</key>
-            <string>keyword.oracle</string>
+            <string>xxx.oracle</string>
         </dict>
         <dict>
             <key>captures</key>
@@ -104,13 +104,19 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\.\b(count|delete|exists|extend|first|last|limit|next|prior|trim)\b</string>
+            <string>(?i)\bSELF\b</string>
+            <key>name</key>
+            <string>support.function.builtin.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\.\b(COUNT|DELETE|EXISTS|EXTEND|FIRST|LAST|LIMIT|NEXT|PRIOR|TRIM)\b</string>
             <key>name</key>
             <string>support.method.collection.oracle</string>
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\.\b(currval|nextval)\b</string>
+            <string>(?i)\.\b(CURRVAL|NEXTVAL)\b</string>
             <key>name</key>
             <string>support.method.sequence.oracle</string>
         </dict>
@@ -135,6 +141,12 @@
         <dict>
             <key>match</key>
             <string>(?i)\s+({{ "|".join(type_list) }})\b</string>
+            <key>name</key>
+            <string>storage.type.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\s+STANDARD\.({{ "|".join(type_list) }})\b</string>
             <key>name</key>
             <string>storage.type.oracle</string>
         </dict>
@@ -166,7 +178,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(CREATE\s+OR\s+REPLACE)\b</string>
+            <string>(?i)\b(CREATE\s+OR\s+REPLACE|NOT\s+FINAL|AUTHID\s+CURRENT_USER|AS\s+OBJECT)\b</string>
             <key>name</key>
             <string>keyword.oracle</string>
         </dict>
